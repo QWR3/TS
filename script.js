@@ -109,8 +109,7 @@ var Fish = {
     }
 };
 var Animals = [Cat, Bird, Fish];
-Cat["function"]();
-Bird["function"]();
-Fish["function"]();
 console.log(Animals);
 Animals[0]["function"]();
+Animals[1]["function"]();
+Animals[2]["function"]();

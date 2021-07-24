@@ -113,7 +113,6 @@ console.groupEnd()
 // и функцию которая возвращает информацию о животном
 // создать три класса Cat, Bird, Fish и имплементировать для каждого интерфейс Animal
 
-
 interface IAnimal {
     type: string
     whatSay: string
