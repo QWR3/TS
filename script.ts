@@ -116,6 +116,7 @@ console.groupEnd()
 interface IAnimal {
     type: string
     whatSay: string
+
     function(): string
 }
 
@@ -125,7 +126,7 @@ const Cat = {
         return `I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`
     }
 }
-const Bird= {
+const Bird = {
     name: 'bird', type: 'fly', whatSay: 'pi-pi-pi or ultrasound', function(): string {
         console.log(`I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`)
         return `I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`
@@ -138,7 +139,7 @@ const Fish = {
     }
 }
 
-const Animals:IAnimal[]=[Cat,Bird,Fish]
+const Animals: IAnimal[] = [Cat, Bird, Fish]
 
 console.log(Animals)
 Animals[0].function()
