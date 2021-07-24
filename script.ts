@@ -113,26 +113,28 @@ console.groupEnd()
 // и функцию которая возвращает информацию о животном
 // создать три класса Cat, Bird, Fish и имплементировать для каждого интерфейс Animal
 
+
 interface IAnimal {
+    name: string
     type: string
     whatSay: string
 
     function(): string
 }
 
-const Cat = {
+const Cat: IAnimal = {
     name: 'cat', type: 'go', whatSay: 'miu-miu-miu', function(): string {
         console.log(`I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`)
         return `I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`
     }
 }
-const Bird = {
+const Bird: IAnimal = {
     name: 'bird', type: 'fly', whatSay: 'pi-pi-pi or ultrasound', function(): string {
         console.log(`I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`)
         return `I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`
     }
 }
-const Fish = {
+const Fish: IAnimal = {
     name: 'fish', type: 'swim', whatSay: 'nothing', function(): string {
         console.log(`I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`)
         return `I am ${this.name} i can ${this.type} and can say '${this.whatSay}'`
